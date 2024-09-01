@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+</head>
+<body>
+    <header>
+    <h1>Portfolio &nbsp;<img src="img.jpg" class="logo" alt="mine" width="30px"></h1>
+    <!-- <img src="img.jpg" alt="mine" width="50px"> -->
+     &nbsp;
+        <div class="nav">
+            <a onclick="show()">Home</a>
+            <a onclick="show1()">About</a>
+            <a  onclick="show3()">Projects</a>
+            <a onclick="show4()">Contact</a>
+            
+        </nav>
+     </div>
+     </header>
+     <div id="main-content" class="content"></div>
+        <div id="main-content1" class="content1"></div>
+            <div id="main-content2" class="content2"></div>
+                <div id="main-content3" class="content3"></div>
+                <script>
+                    function show(){
+                        var content=document.getElementById("main-content");
+                        // /content.innerHTML='<h1>I am haripriya</h1><br>;
+                        content.innerHTML=`
+                        <div class="first">
+                            <h1 style=margin-left:"60px";>I am Haripriya</h1>
+                            <p>Aspiring Frontend developer and Java Enthusiast </p></div>
+                            <div class="image-content">
+                            <img src="image.png" alt="none" class="img1" width="100px" margin-right><br><br>
+                            </div>
+                            `;
+                    }
+                    
+                    function show1(){
+                        var content1=document.getElementById("main-content1");
+                        content1.innerHTML=`
+                        <div class="second">
+                            <p>I am a final year ECE student at Velalar college of engineering and technology.I am very interested in building many websites using
+                                HTML,CSS,Javascript.Till now I have made home page of swiggy.Then I am also interested in problem solving especilally in java.Now I am very focussed to become a frontend developer.
+                                To achieve that I am still learning many frameworks such as react etc.
+                                </div>
+                                <div class="image-content1">
+                            <img src="image copy.png" alt="none" class="img2" width="100px" margin-right>
+                            </div>`;
+                            
+                        }
+                        function show3(){
+                        var content2=document.getElementById("main-content2");
+                        content2.innerHTML=`
+                        <div class="third">
+                            <ul>
+                                <li>I have done Smart Irrigation system using IoT by using various sensors such as moisture,rain,pH,ultrasonic sensor.It helps the farmers to take informative decisions.</li>
+                                <li>I have done Swiggy home page by using HTML,CSS,Javascript etc</li>
+                                </ul>
+            
+                                </third>
+                                <div class="image-content2">
+                                <img src="img5.webp" alt="none" class="img3" width="100px" margin-right>
+                            
+                                </div>`
+            
+                        // If your "Technical Skills" section is appearing at the top and pushing other content down when clicked, it might be because the CSS or layout isn't correctly handling the display of content. Here’s how you can structure your HTML, CSS, and JavaScript to ensure the sections are displayed correctly without displacing other content.
+                            }
+                            function show4(){
+                        var content3=document.getElementById("main-content3");
+                        content3.innerHTML=` <div  class="fourth">
+                     <!-- Add your about us content here -->
+                    <h1>About us</h1>
+                    <p>Information about us...</p>
+                </div>
+            
+                <div id="contact-content" class="content">
+                    <form>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Contact No.:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>`
+            }
+            </script>
+            </body>
+            
+            
+
+    </header>
+</body>
